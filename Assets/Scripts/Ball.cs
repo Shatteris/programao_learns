@@ -29,4 +29,9 @@ public class Ball : MonoBehaviour
 
         rball.velocity = direction * Mathf.Max(speed, 0f);
     }
+
+    private void OnTriggerExit2D(Collider2D Player)
+    {
+        
+    }
 }
