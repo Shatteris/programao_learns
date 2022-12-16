@@ -5,6 +5,11 @@ TagManager:
   serializedVersion: 2
   tags:
   - Floor
+  - Green
+  - Red
+  - Skull
+  - PUP
+  - UI
   layers:
   - Default
   - TransparentFX
@@ -13,7 +18,7 @@ TagManager:
   - Water
   - UI
   - Player
-  - Balll
+  - 
   - 
   - 
   - 

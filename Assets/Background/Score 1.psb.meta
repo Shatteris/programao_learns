@@ -25,6 +25,7 @@ ScriptedImporter:
     streamingMipmaps: 1
     streamingMipmapsPriority: 0
     vTOnly: 0
+    ignoreMasterTextureLimit: 0
     nPOTScale: 1
     sRGBTexture: 1
     spriteMode: 2
@@ -46,6 +47,7 @@ ScriptedImporter:
     flipbookRows: 0
     flipbookColumns: 0
     ignorePngGamma: 0
+    cookieMode: 0
     filterMode: 1
     aniso: 1
     mipBias: 0
@@ -79,7 +81,6 @@ ScriptedImporter:
       width: 0
       height: 0
     spriteID: 
-    internalID: 0
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -89,6 +90,7 @@ ScriptedImporter:
     tessellationDetail: 0
     parentGroupIndex: -1
     uvTransform: {x: 0, y: 0}
+    spritePosition: {x: 0, y: 0}
   mosaicSpriteImportData: []
   rigSpriteImportData:
   - name: Play Again
@@ -103,7 +105,6 @@ ScriptedImporter:
       width: 1088
       height: 184
     spriteID: ed877e3f229888d42a13bf08fc74e29e
-    internalID: 0
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -112,7 +113,8 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -208, y: -488}
+    uvTransform: {x: 4, y: 250}
+    spritePosition: {x: 212, y: 738}
   - name: Quit Game
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -125,7 +127,6 @@ ScriptedImporter:
       width: 977
       height: 180
     spriteID: 419bad0a4156fe1439c753e62ba48b40
-    internalID: 0
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -134,7 +135,8 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -208, y: -622}
+    uvTransform: {x: 4, y: 442}
+    spritePosition: {x: 212, y: 1064}
   - name: Play
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -147,7 +149,6 @@ ScriptedImporter:
       width: 435
       height: 180
     spriteID: 85292c2839dfd9f4294ad8ef95bedf1a
-    internalID: 0
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -156,7 +157,8 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 888, y: -1076}
+    uvTransform: {x: 1100, y: 250}
+    spritePosition: {x: 212, y: 1326}
   - name: Score
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -169,7 +171,6 @@ ScriptedImporter:
       width: 1087
       height: 238
     spriteID: 3311e62c27ce93e44b3996b40e25c5a9
-    internalID: 0
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -178,24 +179,36 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -205, y: -1660}
+    uvTransform: {x: 4, y: 4}
+    spritePosition: {x: 209, y: 1664}
+  characterData:
+    bones: []
+    parts: []
+    dimension: {x: 0, y: 0}
+    characterGroups: []
+    boneReadOnly: 0
+  sharedRigSpriteImportData: []
+  sharedRigCharacterData:
+    bones: []
+    parts: []
+    dimension: {x: 0, y: 0}
+    characterGroups: []
+    boneReadOnly: 0
   platformSettings: []
   mosaicLayers: 1
+  characterMode: 1
   documentPivot: {x: 0, y: 0}
   documentAlignment: 7
   importHiddenLayers: 0
-  importedTextureWidth: 2048
-  importedTextureHeight: 1024
-  documentSize: {x: 1748, y: 2480}
+  layerMappingOption: 2
+  generatePhysicsShape: 0
   paperDollMode: 0
   keepDupilcateSpriteName: 0
+  skeletonAssetReferenceID: 
   spriteCategoryList:
     categories: []
-  textureActualWidth: 2048
-  textureActualHeight: 1024
   spritePackingTag: 
   resliceFromLayer: 0
-  characterMode: 1
   mosaicPSDLayers: []
   rigPSDLayers:
   - name: Play Again
@@ -205,6 +218,9 @@ ScriptedImporter:
     spriteID: ed877e3f229888d42a13bf08fc74e29e
     layerID: 10
     mosaicPosition: {x: 4, y: 250}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
   - name: Quit Game
     spriteName: Quit Game
     isGroup: 0
@@ -212,6 +228,9 @@ ScriptedImporter:
     spriteID: 419bad0a4156fe1439c753e62ba48b40
     layerID: 9
     mosaicPosition: {x: 4, y: 442}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
   - name: Play
     spriteName: Play
     isGroup: 0
@@ -219,6 +238,9 @@ ScriptedImporter:
     spriteID: 85292c2839dfd9f4294ad8ef95bedf1a
     layerID: 8
     mosaicPosition: {x: 1100, y: 250}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
   - name: Score
     spriteName: Score
     isGroup: 0
@@ -226,13 +248,24 @@ ScriptedImporter:
     spriteID: 3311e62c27ce93e44b3996b40e25c5a9
     layerID: 2
     mosaicPosition: {x: 4, y: 4}
-  characterData:
-    bones: []
-    parts: []
-    dimension: {x: 0, y: 0}
-    characterGroups: []
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Plano de Fundo
+    spriteName: 
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 560c3940bc7d77145a0b7b92bf6ba511
+    layerID: 1
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 0
+  sharedRigPSDLayers: []
+  pSDLayerImportSetting: []
   generateGOHierarchy: 0
   textureAssetName: Score 1 Texture
   prefabAssetName: Score 1 Prefab
   spriteLibAssetName: Score 1 Sprite Lib
+  skeletonAssetName: 
   secondarySpriteTextures: []
